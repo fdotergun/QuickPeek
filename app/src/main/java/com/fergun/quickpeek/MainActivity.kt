@@ -1,11 +1,7 @@
 package com.fergun.quickpeek
 
-import androidx.appcompat.app.AppCompatActivity
-import android.os.Bundle
+class MainActivity : com.fergun.core.ui.BaseActivity() {
 
-class MainActivity : AppCompatActivity() {
-    override fun onCreate(savedInstanceState: Bundle?) {
-        super.onCreate(savedInstanceState)
-        setContentView(R.layout.activity_main)
-    }
+    override val layoutId = R.layout.activity_main
+
 }
