@@ -1,21 +1,19 @@
 plugins {
-    id 'com.android.application'
+    id 'com.android.library'
     id 'kotlin-android'
 }
-
-apply from: '../ktlint.gradle'
 
 android {
     compileSdk versions.compileSdk
 
     defaultConfig {
-        applicationId "com.fergun.quickpeek"
         minSdk versions.minSdk
         targetSdk versions.targetSdk
         versionCode versions.versionCode
         versionName versions.versionName
 
         testInstrumentationRunner "androidx.test.runner.AndroidJUnitRunner"
+        consumerProguardFiles "consumer-rules.pro"
     }
 
     buildTypes {
@@ -34,5 +32,12 @@ android {
 }
 
 dependencies {
-    implementation project(':core')
+
+    api "androidx.core:core-ktx:${versions.coreKtx}"
+    api "androidx.appcompat:appcompat:${versions.appComponent}"
+    api "com.google.android.material:material:${versions.materialDesign}"
+    api "androidx.constraintlayout:constraintlayout:${versions.constraintLayout}"
+    testApi "junit:junit:${versions.junit}"
+    androidTestApi "androidx.test.ext:junit:${versions.extJunit}"
+    androidTestApi "androidx.test.espresso:espresso-core:${versions.espressoCore}"
 }

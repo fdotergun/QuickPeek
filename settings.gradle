@@ -8,3 +8,4 @@ dependencyResolutionManagement {
 }
 rootProject.name = "QuickPeek"
 include ':app'
+include ':core'
