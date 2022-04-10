@@ -13,7 +13,9 @@ buildscript {
             'junit': '4.13.2',
             'extJunit': '1.1.3',
             'espressoCore': '3.4.0',
-            'hilt': '2.40.5'
+            'hilt': '2.40.5',
+            'ktxActivity': '1.4.0',
+            'ktxFragment': '1.4.1'
     ]
 
     repositories {
