@@ -15,7 +15,8 @@ buildscript {
             'espressoCore': '3.4.0',
             'hilt': '2.40.5',
             'ktxActivity': '1.4.0',
-            'ktxFragment': '1.4.1'
+            'ktxFragment': '1.4.1',
+            'navVersion':  '2.4.2'
     ]
 
     repositories {

@@ -12,5 +12,4 @@ class OnBoardingActivity: BaseActivity() {
         get() = R.layout.activity_onboarding
 
 
-
 }
