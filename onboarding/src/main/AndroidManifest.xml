@@ -11,4 +11,21 @@
         </dist:delivery>
         <dist:fusing dist:include="true" />
     </dist:module>
+
+
+    <application
+        android:allowBackup="false"
+        android:label="@string/app_name"
+        android:supportsRtl="true"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:icon="@mipmap/ic_launcher">
+
+        <activity android:name="com.fergun.onboarding.OnBoardingActivity"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.VIEW"/>
+            </intent-filter>
+        </activity>
+
+    </application>
 </manifest>
