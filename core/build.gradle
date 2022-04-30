@@ -33,9 +33,6 @@ android {
     kotlinOptions {
         jvmTarget = '1.8'
     }
-    buildFeatures {
-        viewBinding true
-    }
     dataBinding {
         enabled true
     }
@@ -56,6 +53,6 @@ dependencies {
     androidTestApi "androidx.test.ext:junit:${versions.extJunit}"
     androidTestApi "androidx.test.espresso:espresso-core:${versions.espressoCore}"
 
-    api "com.google.dagger:hilt-android:${versions.hilt}"
+    implementation "com.google.dagger:hilt-android:${versions.hilt}"
     kapt "com.google.dagger:hilt-compiler:${versions.hilt}"
 }

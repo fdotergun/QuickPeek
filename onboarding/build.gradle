@@ -3,6 +3,10 @@ plugins {
     id 'kotlin-android'
     id 'kotlin-kapt'
 }
+
+apply plugin: 'dagger.hilt.android.plugin'
+apply from: '../ktlint.gradle'
+
 android {
     compileSdk 32
 
@@ -30,4 +34,7 @@ android {
 dependencies {
     implementation project(":app")
     implementation project(":core")
+
+    implementation "com.google.dagger:hilt-android:${versions.hilt}"
+    kapt "com.google.dagger:hilt-compiler:${versions.hilt}"
 }
