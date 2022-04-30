@@ -14,4 +14,6 @@ abstract class BaseActivity: AppCompatActivity() {
         super.onCreate(savedInstanceState)
         binding = DataBindingUtil.setContentView(this, layoutId)
     }
+
+    /**/
 }

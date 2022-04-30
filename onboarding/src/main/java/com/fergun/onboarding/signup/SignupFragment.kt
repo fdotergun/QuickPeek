@@ -9,7 +9,9 @@ import androidx.fragment.app.activityViewModels
 import com.fergun.core.ui.BaseFragment
 import com.fergun.onboarding.OnBoardingViewModel
 import com.fergun.onboarding.databinding.FragmentSignUpBinding
+import dagger.hilt.android.AndroidEntryPoint
 
+@AndroidEntryPoint
 class SignupFragment : BaseFragment() {
 
     val viewModel: OnBoardingViewModel by activityViewModels()
